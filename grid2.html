@@ -1,0 +1,118 @@
+<html>
+    <header>
+       <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 33.3% 33.3% 33.3%;
+            gap: 5px;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .item{
+            background-color: rgb(241, 239, 239);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .subGrid{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: 5px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .sub4{
+            background-color: rgb(184, 180, 180);
+            padding: 5px;
+            box-sizing: border-box;
+
+        }
+
+        .flex1{
+            display: grid;
+            gap: 5px;
+            grid-template-rows: 50% 50%;
+            align-content: center;
+            height: 100%;
+            
+
+        }
+
+        .subrow{
+            background-color: rgb(184, 180, 180);
+            padding: 5px;
+        }
+
+        .flex2{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 50% 50%;
+            justify-content: center;
+            height: 100%;
+
+        }
+
+
+
+       </style>
+    </header>
+    <body>
+        <div class="grid">
+            <div class="item">Item 1</div>
+            <div class="item">
+                <div class="subGrid">
+                    <div class="sub4">Sub 1</div>
+                    <div class="sub4">Sub 2</div>
+                    <div class="sub4">Sub 3</div>
+                    <div class="sub4">Sub 4</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="subGrid">
+                    <div class="sub4">Sub 1</div>
+                    <div class="sub4">Sub 2</div>
+                    <div class="sub4">Sub 3</div>
+                    <div class="sub4">Sub 4</div>
+                </div>
+            </div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">
+                <div class="flex1">
+                    <div class="subrow">Sub 1</div>
+                    <div class="subrow">Sub 2</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flex2">
+                    <div class="subrow">Sub 1</div>
+                    <div class="subrow">Sub 2</div>
+                </div>
+            </div>
+            <div class="item">Item 8</div>
+            <div class="item">
+                <div class="subGrid">
+                    <div class="sub4">Sub 1</div>
+                    <div class="sub4">Sub 2</div>
+                    <div class="sub4">Sub 3</div>
+                    <div class="sub4">Sub 4</div>
+                </div>
+            </div>
+            <div class="item">Item 10</div>
+            <div class="item">Item 11</div>
+            <div class="item">
+                <div class="subGrid">
+                    <div class="sub4">Sub 1</div>
+                    <div class="sub4">Sub 2</div>
+                    <div class="sub4">Sub 3</div>
+                    <div class="sub4">Sub 4</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
